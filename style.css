@@ -1,0 +1,194 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #005f99, #00b4d8);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #005f99;
+  padding: 10px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#top{
+  font-size: 25px;
+  background: linear-gradient(135deg, #565c5f, #02161e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-header .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.main-header .logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 50%; 
+}
+
+.main-header .logo h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffd60a;
+}
+
+.login-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-box {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #005f99;
+}
+
+.input-group {
+  width: 95%;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #005f99;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0077b6;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.register-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.main-footer {
+  text-align: center;
+  background: #005f99;
+  color: white;
+  padding: 12px;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-header .logo h1 {
+    font-size: 16px;
+  }
+
+  .nav-links {
+    gap: 5px;
+  }
+
+  .login-box {
+    padding: 20px 15px;
+  }
+
+  .login-box h2 {
+    font-size: 18px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.form-logo {
+  
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.form-logo img {
+  width: 80px;     
+  height: 80px;
+  object-fit: contain;
+  border-radius: 50%; 
+  border: 2px solid #005f99;
+  background: #fff;
+  padding: 5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
